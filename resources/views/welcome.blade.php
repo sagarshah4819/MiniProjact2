@@ -64,8 +64,29 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
+
+
+
+    <!-- changed here -->
+
+    <div class="top-left links">
+        <!-- Left Side Of Navbar -->
+        <br><br>
+        <a href="{{ url('/contact') }}">Contact</a>
+        <a href="{{ url('/about') }}">About</a>
+
+    </div>
+
+
+
+    <!-- till here -->
+
+
+
+    <div class="flex-center position-ref full-height">
+
+
+        @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
@@ -83,6 +104,7 @@
                 <div class="title m-b-md">
                     Laravel
                 </div>
+
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
