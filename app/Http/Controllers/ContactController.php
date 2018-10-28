@@ -13,4 +13,8 @@ class ContactController extends Controller
         $name = $request->name;
         return redirect()->route('thanks',['name'=> $name ]);
     }
+    function thanks($name, Request $request) {
+
+        return view('pages.thankyou')->with(compact('name'));
+    }
 }
