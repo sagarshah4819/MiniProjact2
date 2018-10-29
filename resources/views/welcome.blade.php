@@ -65,24 +65,7 @@
     </head>
     <body>
 
-
-
-    <!-- changed here -->
-
-    <div class="top-left links">
-        <!-- Left Side Of Navbar -->
-        <br><br>
-        <a href="{{ url('/contact') }}">Contact</a>
-        <a href="{{ url('/about') }}">About</a>
-
-    </div>
-
-
-
-    <!-- till here -->
-
-
-
+    
     <div class="flex-center position-ref full-height">
 
 
@@ -91,6 +74,8 @@
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
+                        <a href="{{ url('/contact') }}">Contact</a>
+                        <a href="{{ url('/about') }}">About</a>
                         <a href="{{ route('login') }}">Login</a>
 
                         @if (Route::has('register'))
