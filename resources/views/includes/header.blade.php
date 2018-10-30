@@ -21,9 +21,9 @@
             </ul>
 
             <!-- Right Side Of Navbar -->
-            <!--  <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto">
 
-                  <li class="nav-item"> -->
+                <li class="nav-item">
                       <!-- Authentication Links -->
                     @guest
                         <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
