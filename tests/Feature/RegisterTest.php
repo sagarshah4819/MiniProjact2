@@ -18,4 +18,10 @@ class RegisterTest extends TestCase
         $response = $this->get('/register');
         $response->assertStatus(200);
     }
+
+    public function testLoginPage()
+    {
+        $response = $this->get('/login');
+        $response->assertStatus(200);
+    }
 }
